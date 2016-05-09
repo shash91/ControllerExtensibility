@@ -15,6 +15,11 @@ namespace ControllerExtensibility
             AreaRegistration.RegisterAllAreas();
             ControllerBuilder.Current.SetControllerFactory(new CustomControllerFactory());
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            ControllerBuilder.Current.DefaultNamespaces.Add("MyControllerNamespace");
+            ControllerBuilder.Current.DefaultNamespaces.Add("MyProject.*");
+
+            ControllerBuilder.Current.SetControllerFactory(new DefaultControllerFactory(new CustomControllerActivator()));
         }
     }
 }
