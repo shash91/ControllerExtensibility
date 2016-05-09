@@ -143,7 +143,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Shared\Result.cshtml" />
-    <Content Include="Views\Customer\Enumerate.cshtml" />
+    <Content Include="Views\Customer\MyAction.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
